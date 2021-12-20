@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-12-14T15:34:35</date>
+  <millis>1639476275709</millis>
+  <sequence>0</sequence>
+  <logger>com.example.demo.TestCustomException</logger>
+  <level>INFO</level>
+  <class>com.example.demo.TestCustomException</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Employee [employeeId=102, employeeName=shyam, designation=manager, salary=4000.0]</message>
+</record>
+<record>
+  <date>2021-12-14T15:34:35</date>
+  <millis>1639476275725</millis>
+  <sequence>1</sequence>
+  <logger>com.example.demo.TestCustomException</logger>
+  <level>INFO</level>
+  <class>com.example.demo.TestCustomException</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Employee [employeeId=12, employeeName=null, designation=null, salary=2000.0]</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-12-14T15:37:24</date>
+  <millis>1639476444866</millis>
+  <sequence>0</sequence>
+  <logger>com.example.demo.TestCustomException</logger>
+  <level>SEVERE</level>
+  <class>com.example.demo.TestCustomException</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Employee [employeeId=102, employeeName=shyam, designation=manager, salary=4000.0]</message>
+</record>
+<record>
+  <date>2021-12-14T15:37:24</date>
+  <millis>1639476444881</millis>
+  <sequence>1</sequence>
+  <logger>com.example.demo.TestCustomException</logger>
+  <level>SEVERE</level>
+  <class>com.example.demo.TestCustomException</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Employee [employeeId=12, employeeName=null, designation=null, salary=2000.0]</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-12-14T15:37:54</date>
+  <millis>1639476474262</millis>
+  <sequence>0</sequence>
+  <logger>com.example.demo.TestCustomException</logger>
+  <level>INFO</level>
+  <class>com.example.demo.TestCustomException</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Employee [employeeId=102, employeeName=shyam, designation=manager, salary=4000.0]</message>
+</record>
+<record>
+  <date>2021-12-14T15:37:54</date>
+  <millis>1639476474278</millis>
+  <sequence>1</sequence>
+  <logger>com.example.demo.TestCustomException</logger>
+  <level>SEVERE</level>
+  <class>com.example.demo.TestCustomException</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Employee [employeeId=12, employeeName=null, designation=null, salary=2000.0]</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-12-14T18:49:57</date>
+  <millis>1639487997433</millis>
+  <sequence>0</sequence>
+  <logger>com.example.demo.TestCustomException</logger>
+  <level>INFO</level>
+  <class>com.example.demo.TestCustomException</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Employee [employeeId=102, employeeName=shyam, designation=manager, salary=4000.0]</message>
+</record>
+<record>
+  <date>2021-12-14T18:49:57</date>
+  <millis>1639487997464</millis>
+  <sequence>1</sequence>
+  <logger>com.example.demo.TestCustomException</logger>
+  <level>SEVERE</level>
+  <class>com.example.demo.TestCustomException</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Employee [employeeId=12, employeeName=null, designation=null, salary=2000.0]</message>
+</record>
+</log>
