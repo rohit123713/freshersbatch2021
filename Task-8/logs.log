@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-12-15T10:04:44</date>
+  <millis>1639542884852</millis>
+  <sequence>0</sequence>
+  <logger>com.example.demo.Application</logger>
+  <level>INFO</level>
+  <class>com.example.demo.Application</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Customer [customerId=1234, customerName=sai, phoneNumber=77653459, email=abc@gmail.com]</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-12-15T10:29:31</date>
+  <millis>1639544371071</millis>
+  <sequence>0</sequence>
+  <logger>com.example.demo.Application</logger>
+  <level>SEVERE</level>
+  <class>com.example.demo.Application</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Customer [customerId=1234, customerName=sai, phoneNumber=77653459, email=abc@gmail.com]</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-12-15T10:50:44</date>
+  <millis>1639545644220</millis>
+  <sequence>0</sequence>
+  <logger>com.example.demo.Application</logger>
+  <level>SEVERE</level>
+  <class>com.example.demo.Application</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Customer [customerId=null, customerName=null, phoneNumber=0, email=abc@gmail.com]</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-12-15T10:51:11</date>
+  <millis>1639545671613</millis>
+  <sequence>0</sequence>
+  <logger>com.example.demo.Application</logger>
+  <level>SEVERE</level>
+  <class>com.example.demo.Application</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Customer [customerId=null, customerName=null, phoneNumber=0, email=abc@gmail.com]</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
