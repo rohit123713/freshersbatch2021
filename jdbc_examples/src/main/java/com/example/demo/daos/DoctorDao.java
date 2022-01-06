@@ -21,7 +21,8 @@ public class DoctorDao implements DoctorRepository<Doctor> {
 	public int add(Doctor t) {
 
 
-		String sql = "insert into doctor_rohit2 values(?,?,?,?,?,?)";
+		//String sql = "insert into doctor_rohit2 values(?,?,?,?,?,?)";
+		String sql = "insert into rohitdoctor values(?,?,?,?,?,?)";
 		int rowAdded=0;
 		
         try(PreparedStatement pstmt = con.prepareStatement(sql)) {	
@@ -45,12 +46,13 @@ public class DoctorDao implements DoctorRepository<Doctor> {
 	@Override
 	public List<Doctor> findAll() {
 		
-		String sql = "select * from doctor_rohit2";
-		
+		//String sql = "select * from doctor_rohit2";
+		String sql = "select * from rohitdoctor";
 		List<Doctor> docList = new ArrayList<Doctor>();
 		
 		try(PreparedStatement pstmt = con.prepareStatement(sql)) {
 			
+			System.out.println(pstmt.getClass().getName());
 			//rs contains all records present in the database
 			ResultSet rs= pstmt.executeQuery();
 			
@@ -65,10 +67,12 @@ public class DoctorDao implements DoctorRepository<Doctor> {
 				
 				Doctor found = new Doctor(doctorId, doctorName, handPhone, email, specialization, city);
 				
+				
 				docList.add(found);
 			}
 		} catch (SQLException e) {
-			// TODO: handle exception
+		
+			e.printStackTrace();
 		}
 			
 		return docList;

@@ -21,11 +21,37 @@ public class DbConnection {
 			
 			props.load(inStream);
 			con=DriverManager.getConnection(
-					props.getProperty("datasource.url"), 
-					props.getProperty("datasource.userName"), 
-					props.getProperty("datasource.password"));
+					props.getProperty("datasource.oracle.url"), 
+					props.getProperty("datasource.oracle.userName"), 
+					props.getProperty("datasource.oracle.password"));
 			
 		} catch (SQLException | ClassNotFoundException | IOException e) {
+			
+			e.printStackTrace();
+		} 
+		return con;
+	}
+	
+	public static Connection getPostgresConnection() {
+		Connection con =null;
+		
+		try {
+			//Class.forName("org.postgresql.Driver");
+			
+			Properties props= new Properties();
+//			con =DriverManager.
+//					getConnection("jdbc:oracle:thin:@10.90.1.105:1521/DEV", "HR", "HR");
+			
+			InputStream inStream = DbConnection.class.getClassLoader().
+					getResourceAsStream("DbConnection.properties");
+			
+			props.load(inStream);
+			con=DriverManager.getConnection(
+					props.getProperty("datasource.postgres.url"), 
+					props.getProperty("datasource.postgres.userName"), 
+					props.getProperty("datasource.postgres.password"));
+			
+		} catch (SQLException  | IOException e) {
 			
 			e.printStackTrace();
 		} 

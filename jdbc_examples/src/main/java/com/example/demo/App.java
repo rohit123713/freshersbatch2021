@@ -2,8 +2,10 @@ package com.example.demo;
 
 import com.example.demo.daos.DoctorDao;
 import com.example.demo.entity.Doctor;
+import com.example.demo.enums.DatabaseName;
 import com.example.demo.ifaces.CrudRepository;
 import com.example.demo.ifaces.DoctorRepository;
+import com.example.demo.utilis.Connectionfactory;
 import com.example.demo.utilis.DbConnection;
 import java.sql.*;
 import java.util.List;
@@ -17,22 +19,25 @@ public class App
     {
         System.out.println( "Hello World!" );
         
+        //Connection conn=Connectionfactory.getConnection(2);
+        Connection conn=Connectionfactory.getConnection(DatabaseName.POSTGRES);
         System.out.println(DbConnection.getOracleConnection());
         
-        Connection conn=DbConnection.getOracleConnection();
-        DoctorRepository repo = new DoctorDao(conn);
+        Connection con=DbConnection.getOracleConnection();
+        DoctorRepository<Doctor> repo = new DoctorDao(conn);
         
-        int key=6;
+        int key=1;
         switch(key) {
         
         case 1:
         
         //find all the data
+        
         repo.findAll().forEach(System.out::println);
         break;
         
         case 2:
-        Doctor doc= new Doctor(109,"ravi",900232,"ravi@abc.com",
+        Doctor doc= new Doctor(110,"ranju",900232,"ravi@abc.com",
         		"dentist","karaikudi");
         int rowadded=repo.add(doc);
         
